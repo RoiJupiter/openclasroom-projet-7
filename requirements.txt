@@ -1,3 +1,5 @@
+pyhton==3.9.5
+
 Flask
 gunicorn
 keras.utils
