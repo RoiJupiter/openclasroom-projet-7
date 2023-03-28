@@ -3,4 +3,3 @@ sklearn
 gunicorn
 keras
 tensorflow
-nltk
