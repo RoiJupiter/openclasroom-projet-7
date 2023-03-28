@@ -39,6 +39,9 @@ def predict_tweet_sentiment(score):
 def y_pred(score):
     return 1 if score>0.5 else 0
 
+def home():
+    return render_template('home.html')
+
 
 app = Flask(__name__)
 
