@@ -3,4 +3,4 @@ sklearn
 gunicorn
 keras.utils
 keras.preprocessing
-tensorflow
+tensorflow-cpu
