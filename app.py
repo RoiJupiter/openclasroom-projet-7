@@ -8,7 +8,7 @@ from nltk.stem import SnowballStemmer
 
 import json
 import pickle
-from flask import Flask,request,app,jsonify,url_for,render_template
+from flask import Flask, request, app
 
 tokenizer = Tokenizer()
 
@@ -39,14 +39,14 @@ def predict_tweet_sentiment(score):
 def y_pred(score):
     return 1 if score>0.5 else 0
 
-def home():
-    return render_template('home.html')
-
-
 app = Flask(__name__)
 
 ## Load the model
 model = pickle.load(open('model_keras_LSTM.pkl','rb'))
+
+@app.route('/')
+def home():
+    return "hello"
 
 @app.route('/predict_api',methods=['POST'])
 def predict_api():
