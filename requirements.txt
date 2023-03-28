@@ -5,3 +5,7 @@ numpy
 matplotlib
 gunicorn
 keras
+tensorflow
+nltk
+pickle
+json
