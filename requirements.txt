@@ -2,5 +2,5 @@ Flask
 sklearn
 gunicorn
 keras.utils
-keras.preprocessing.text
+keras.preprocessing
 tensorflow
