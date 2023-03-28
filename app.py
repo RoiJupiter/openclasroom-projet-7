@@ -10,10 +10,7 @@ import json
 import pickle
 from flask import Flask,request,app,jsonify,url_for,render_template
 
-
 tokenizer = Tokenizer()
-
-
 
 stemmer = SnowballStemmer('english')
 
@@ -21,7 +18,6 @@ stop_words = stopwords.words('english')
 text_cleaning_regex = "@S+|https?:S+|http?:S|[^A-Za-z0-9]+"
 
 def clean_tweets(text, stem=False):
-
     # Text passed to the regex equatio
     text = re.sub(text_cleaning_regex, ' ', str(text).lower()).strip()
     # Empty list created to store final tokens
@@ -44,7 +40,6 @@ def y_pred(score):
     return 1 if score>0.5 else 0
 
 
-
 app = Flask(__name__)
 
 ## Load the model
@@ -56,27 +51,17 @@ def predict_api():
     #récupération de la donnée
     data = request.json['data']
 
-    print(data)
-    
-    
     #traitement de la donnée
     text_cleaned = clean_tweets(data)
 
     text_arrayed = []
     text_arrayed.append(text_cleaned)
 
-    print(text_cleaned)
-
     text_pad_sequences = pad_sequences(tokenizer.texts_to_sequences(text_arrayed), maxlen = 30)
-
-    print(text_pad_sequences)
 
     scores = model.predict(text_pad_sequences, verbose=1, batch_size=10000)
 
-    print(scores)
     model_predictions = [predict_tweet_sentiment(score) for score in scores]
-
-    print(model_predictions)
 
     return json.dumps(model_predictions)
  
