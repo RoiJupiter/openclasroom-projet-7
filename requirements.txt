@@ -7,4 +7,3 @@ gunicorn
 keras
 tensorflow
 nltk
-json
