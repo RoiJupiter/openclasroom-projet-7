@@ -3,4 +3,3 @@ gunicorn
 keras.utils
 keras.preprocessing
 tensorflow-cpu
-nltk
