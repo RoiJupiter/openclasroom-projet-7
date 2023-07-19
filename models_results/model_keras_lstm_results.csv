@@ -1,0 +1,2 @@
+,Nom du modèle,Recall,Precision,Accuracy
+0,Modèle keras avec couche LSTM,0.7925538887952507,0.748991198055549,0.763190625
