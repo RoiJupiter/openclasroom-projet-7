@@ -22,10 +22,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           
-      - name: execute py script # run app.py
+      - name: execute ipynb script # run app.py
         env:
           SOME_SECRET: ${{ secrets.SOME_SECRET }}
-        run: python app.py
+        run: python Model_Keras_LSTM.ipynb
           
       - name: commit files
         run: |
