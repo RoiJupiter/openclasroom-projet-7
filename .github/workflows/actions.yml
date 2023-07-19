@@ -2,7 +2,7 @@ name: run Model_Keras_LSTM.ipynb
 
 on:
   schedule:
-    - cron: '0 13 07 * *' # “At 12:00 on day-of-month 18.”
+    - cron: '0 13 09 * *' # “At 12:00 on day-of-month 18.”
 
 jobs:
   build:
