@@ -2,7 +2,7 @@ from flask import Flask , request, render_template
 from model import predict
 
 #pyhtonanywhere templates folder path
-# '/home/Jupiter/mysite/templates/'
+# var_template_folder = '/home/Alwis/openclasroom-projet-7/templates/'
 var_template_folder = 'D:/anaconda3/envs/env1/notebooks/OP Notebooks/p7/Github/openclasroom-projet-7/templates' 
  
 app = Flask('Prediction des sentiments sur twitter',template_folder = var_template_folder)

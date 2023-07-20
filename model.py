@@ -2,12 +2,13 @@ import tensorflow as tf
 from keras_preprocessing.sequence import pad_sequences
 import pickle
 
-#pyhtonanywhere model path
-#'/home/Jupiter/mysite/model_keras_LSTM'
-var_model_path = 'D:/anaconda3/envs/env1/notebooks/OP Notebooks/p7/Github/openclasroom-projet-7/model_keras_LSTM'
-#pyhtonanywhere word embedding path
-#'/home/Jupiter/mysite/tokenizer_GLOVE_LSTM_traite.pkl'
-var_word_embeding_path = 'D:/anaconda3/envs/env1/notebooks/OP Notebooks/p7/Github/openclasroom-projet-7/tokenizer_GLOVE_LSTM_traite.pkl'
+#pyhtonanywhere variables
+var_model_path = '/home/Alwis/openclasroom-projet-7/model_keras_LSTM'
+var_word_embeding_path = '/home/Alwis/openclasroom-projet-7/tokenizer_GLOVE_LSTM_traite.pkl'
+
+#local variables
+#var_model_path = 'D:/anaconda3/envs/env1/notebooks/OP Notebooks/p7/Github/openclasroom-projet-7/model_keras_LSTM'
+#var_word_embeding_path = 'D:/anaconda3/envs/env1/notebooks/OP Notebooks/p7/Github/openclasroom-projet-7/tokenizer_GLOVE_LSTM_traite.pkl'
  
 
 def decode_sentiment(score):
