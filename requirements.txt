@@ -3,3 +3,11 @@ gunicorn
 keras.utils
 keras.preprocessing
 tensorflow-cpu
+
+mlflow
+numpy
+pandas
+matplotlib
+keras
+sklearn
+nltk
