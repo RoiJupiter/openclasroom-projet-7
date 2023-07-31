@@ -31,6 +31,7 @@ jobs:
           pip install GitPython
           pip install -r requirements.txt
 
-      - id: script 
+      - id: jupyter 
         name: Run Model_Keras_LSTM.ipynb
-        run: python Model_Keras_LSTM.ipynb
+        run: jupyter execute Model_Keras_LSTM.ipynb
+        shell: bash
