@@ -4,6 +4,9 @@ keras.utils
 keras.preprocessing
 tensorflow-cpu
 
+jupyterlab
+nbclient
+
 mlflow
 numpy
 pandas
