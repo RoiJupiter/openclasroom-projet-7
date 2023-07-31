@@ -14,3 +14,4 @@ matplotlib
 keras
 scikit-learn
 nltk
+plot_keras_history
