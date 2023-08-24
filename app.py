@@ -3,7 +3,7 @@ from model import predict
 import git
 
 #pyhtonanywhere templates folder path
-var_template_folder = '/home/Alwis/openclasroom-projet-7/templates/'
+var_template_folder = '/openclasroom-projet-7/templates/'
 # var_template_folder = 'D:/anaconda3/envs/env1/notebooks/OP Notebooks/p7/Github/openclasroom-projet-7/templates' 
  
 app = Flask('Prediction des sentiments sur twitter',template_folder = var_template_folder)
