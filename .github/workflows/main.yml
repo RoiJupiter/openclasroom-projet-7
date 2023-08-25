@@ -1,7 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: run Model_Keras_LSTM.ipynb
-
+name: deploiement de mon api
 # Controls when the workflow will run
 on:
   push:
@@ -31,6 +30,6 @@ jobs:
           pip install -r requirements.txt
 
       - id: jupyter 
-        name: Run Model_Keras_LSTM.ipynb
-        run: jupyter execute Model_Keras_LSTM.ipynb
+        name: Run app.py
+        run: execute app.py
         shell: bash
