@@ -31,5 +31,5 @@ jobs:
 
       - id: jupyter 
         name: Run app.py
-        run: execute app.py
+        run: run app.py
         shell: bash
