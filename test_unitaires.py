@@ -18,3 +18,6 @@ def test_predict():
     assert decode_sentiment(score) <= expected_output
 
     print("Cas de test avec score <= 0.5 test unitaire passé")
+
+
+test_predict()
