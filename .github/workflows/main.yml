@@ -29,7 +29,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - id: jupyter 
-        name: Run app.py
-        run: run app.py
+      - id: app 
+        name: python app.py
+        run: python app.py
         shell: bash
